@@ -1,0 +1,33 @@
+.titulo{
+    color: var(--secondary);
+}
+.container{
+    display: grid;
+    gap: 3rem;
+    margin-top: 40px;
+}
+.mastercard{
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: var(--blanco);
+    transition: 0.5s;
+    object-fit: cover;
+}
+@media (min-width:768px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .mastercard:hover{
+        box-shadow: 5px 5px 30px rgba(0,0,0,0.7);
+    }
+    .card:hover{       
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}

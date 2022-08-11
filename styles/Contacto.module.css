@@ -1,0 +1,23 @@
+.seccion{
+    display: grid;
+}
+@media (min-width:768px){
+    .seccion{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.iconos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.iconos div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.iconos p{
+    padding-left: 1rem;
+    font-size: 1.6rem;
+}

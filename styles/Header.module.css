@@ -1,0 +1,52 @@
+.header{
+    padding: 1rem;
+    background-color: var(--blanco);
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuLink{
+    display: none;
+}
+.menuBars{
+    display: block;
+}
+@media (min-width:1024px){
+    .menuLink{
+        display: flex;
+        gap: 2rem;
+    }
+    .menuLink a{
+        position: relative;
+        color: var(--negro);
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: .5rem;
+        transition-property: background-color;
+        transition-duration: .2s;
+    }
+    .menuLink a:after{
+        content: "";
+        position: absolute;
+        background-color: var(--secondary);
+        height: 2px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    .menuLink a:hover:after{
+        width: 100%;
+    }
+    .menuBars{
+        display: none;
+    }
+    .menuBars img{
+        border-color: aliceblue;
+    }
+}
