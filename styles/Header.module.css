@@ -12,10 +12,8 @@
 .menuLink{
     display: flex;
     flex-direction: column;
-    background-color: var(--negro);  
     text-align: center;
-    width: 100%;
-    height: 332px;
+    width: 100%;    
     position: absolute;
     top: 104px;
     opacity: 1;
@@ -28,12 +26,9 @@
     padding: 30px;
     
 }
-.menuLink a:hover{
-    background-color: var(--primary);
-    color: var(--blanco);
-}
 
 .menuLink.active{
+    background-color: var(--negro); 
     transition: all 0.5s ease;
     opacity: 1; 
     left: 0%; 
@@ -46,7 +41,13 @@
 @media (min-width:1024px){
     .menuLink{
         display: flex;
-        gap: 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 45%;
+        left: 0%;
+        position: relative;
+        top: 0px;
+        gap: 1rem;
     }
     .menuLink a{
         position: relative;
@@ -70,6 +71,9 @@
     }
     .menuLink a:hover:after{
         width: 100%;
+    }
+    .menuLink a:hover{
+        background-color: transparent;
     }
     .menuBars{
         display: none;
