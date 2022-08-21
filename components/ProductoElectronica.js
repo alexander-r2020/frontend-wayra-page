@@ -14,7 +14,7 @@ const ProductoElectronica = ({electronica}) => {
           {productos.map(producto=>(
             <div key={producto._id} className={styles.producto}>
               <div>  
-                <Image priority layout="responsive" width={300} height={300} src={producto.img} alt="imagen"/>
+                <Image layout="responsive" width={300} height={300} src={producto.img} alt="imagen"/>
                 </div>
               <div>
                 <h4>{producto.nombre}</h4>

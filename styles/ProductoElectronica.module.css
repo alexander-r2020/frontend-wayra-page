@@ -63,6 +63,9 @@
     transition: 0.5s;
     overflow: hidden;
 }
+.producto img{
+    width: 100%;
+}
 @media ( min-width:768px){
     .producto:hover{
         box-shadow: 5px 5px 30px rgba(0,0,0,0.8);
