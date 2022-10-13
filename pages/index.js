@@ -30,8 +30,8 @@ export default function Home({category,pesca,electronica}) {
 export async function getStaticProps(){
 
   const {category} = await getCategories()
-  const urlProductoPesca= `${process.env.API_URL}/api/product?name=pesca`
-  const urlProductoelectronica= `${process.env.API_URL}/api/product?name=electronica`
+  const urlProductoPesca= `${process.env.API_URL}/api/product?name=Pesca`
+  const urlProductoelectronica= `${process.env.API_URL}/api/product?name=Electrodomésticos`
   const [resPesca,resElectronica] = await Promise.all([
     fetch(urlProductoPesca),
     fetch(urlProductoelectronica)

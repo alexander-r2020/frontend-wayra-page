@@ -1,10 +1,17 @@
 .titulo{
     color: var(--secondary);
 }
+.titulocategoria{
+    font-size: 2rem;
+}
 .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 95%;
+    margin: 0 auto;
     display: grid;
-    gap: 3rem;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fill,minmax(290px,1fr));
+    gap: 20px;
 }
 .mastercard{
     overflow: hidden;
@@ -20,9 +27,9 @@
     object-fit: cover;
 }
 @media (min-width:768px){
-    .container{
+    /* .container{
         grid-template-columns: repeat(2,1fr);
-    }
+    } */
     .mastercard:hover{
         box-shadow: 5px 5px 30px rgba(0,0,0,0.7);
     }

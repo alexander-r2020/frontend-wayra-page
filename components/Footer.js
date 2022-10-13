@@ -15,12 +15,12 @@ const Footer = () => {
             </nav>
             <div className={styles.contacto}>
               <h4>CONTACTO</h4>
-              <p>Direcion: Av. Avellaneda 3202</p>
+              <p>Direccion: Av. Avellaneda 3202</p>
               <p>telefono: 4611-9927</p>
               <p>Horario: L a V de 9 a 17hs</p>
             </div>            
             <div>
-              <h4>SIGUENOS</h4>
+              <h4>SEGUINOS</h4>
               <Image width={45} height={45} src="/img/icon/facebook-square-brands.svg" alt="icono facebook"/>
               <Image width={45} height={45} src="/img/icon/instagram-square-brands.svg" alt="icono Instagram"/>
               <Image width={45} height={45} src="/img/icon/twitter-square-brands.svg" alt="icono twitter"/>

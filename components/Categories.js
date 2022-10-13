@@ -11,6 +11,7 @@ const Categories = ({categories}) => {
                 <ListadoCategories 
                     key={category._id}
                     nombre={category.nombre}
+                    img={category.img}
                 />
             ))}
         </section>
