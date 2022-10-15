@@ -41,6 +41,7 @@ export async function getStaticPaths(){
     const respuesta = await fetch(url)
     const { category } = await respuesta.json()
     
+    
     const paths = category.map(categoria =>({
         params:{name:categoria.name}
     }))
