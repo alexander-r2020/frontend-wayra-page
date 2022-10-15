@@ -12,7 +12,7 @@ const Categorias = ({categoria}) => {
 
         <h2 className='heading'>{nombre}</h2>
         <section className={styles.container}>
-            {producto.map(product=>(
+            {producto?.map(product=>(
                 <div 
                     className={styles.producto}
                     key={product._id}
