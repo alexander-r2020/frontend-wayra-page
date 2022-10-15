@@ -28,7 +28,7 @@ img {
   width: 90%;
 }
 [class*="heading"] {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: 900;
   color: var(--negro);

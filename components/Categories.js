@@ -12,6 +12,7 @@ const Categories = ({categories}) => {
                     key={category._id}
                     nombre={category.nombre}
                     img={category.img}
+                    name={category.name}
                 />
             ))}
         </section>

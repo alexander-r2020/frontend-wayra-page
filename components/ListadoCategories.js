@@ -1,12 +1,12 @@
 import styles from '../styles/Categories.module.css'
 import Link from 'next/link'
 
-const ListadoCategories = ({nombre,img}) => {
+const ListadoCategories = ({nombre,img,name}) => {
   return (
         <>
-        <Link href={'/productos'}>
+        
             <div className={styles.mastercard}>
-                
+            <Link href={`/categorias/${name}`}>
                     <section className={styles.card}>
                         <h2 className={styles.titulocategoria}>{nombre}</h2>
                         <style jsx>{`
@@ -18,9 +18,10 @@ const ListadoCategories = ({nombre,img}) => {
                             }
 
                             `}</style>
-                    </section>           
+                    </section> 
+                    </Link>           
             </div>
-        </Link>      
+             
         </>
   )
 }

@@ -1,0 +1,46 @@
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(290px,1fr));
+    gap: 20px;
+}
+.producto{
+    background-color: var(--blanco);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+.descripcion{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+.precio{
+    color:var(--primary);
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0;
+}
+.enlace{
+    margin-top: 2rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--negro);
+    border: 2px solid var(--primary);
+    padding: 1rem 5rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+.enlace:hover{
+    background-color: var(--primary);
+    color:var(--blanco)
+}
